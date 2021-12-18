@@ -3,45 +3,185 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
-        <link rel="stylesheet" href="./assets/style.css"/>
+        <link rel="stylesheet" href="./assets/lib/bootstrap-4.6.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-                <div class="content">
-                    <div class="logo">
-                        <a href="./index.html">
-                            <h1>Pantai</h1>
-                            <p>Beach</p>
-                        </a>
-                    </div>
-                    <div class="menu">
-                        <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Contact</a></li>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./assets/images/logo-monkey-forest-ubud.png"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./general-information.html">General Information</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./guidelines.html">Guidelines</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-            </header>
-            <section class="home-images">
-                <div class="overlay"></div>
-                <div class="wrap-images">
-                    <div class="item-image">
-                        <div class="content">
-                            <div class="image-content">
-                                <h1>Pantai Beach</h1>
-                                <p>Pantai Adalah Beach. Beach Adalah Pantai.</p>
-                                <div>
-                                    <a href="#">Gas</a>
-                                </div>
+            </nav>
+        </header>
+        <main role="main">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="carousel-caption text-center">
+                            <h1>Monkey Forest Ubud</h1>
+                            <p>The Sacred Monkey Forest Sanctuary (Monkey Forest Ubud) is not just a tourist attractions or important component in the spiritual and economic life of the local community, but also an important spot for research and conservation programs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>What is inside the Monkey Forest?</h1>
+                                <p>Inside the Monkey Forest visitors can see 3 temples (Pura Dalem or temple to worship Lord Shiva, Holy Water Temple, and Cremation Temple). Visitors can also see various kinds of trees and definitely Monkeys.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="carousel-caption text-center">
+                                <h1>What are the facilities at the monkey forest?</h1>
+                                <p>At the Monkey Forest we have an exhibition room, open stage, first aid clinic, animal (monkey) clinic, sufficient toilets, and wide parking area.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+                <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+
+            <div class="container info-wrapper">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info-caption">
+                            <i class="ion-clock"></i>
+                            <div>
+                                <h2>OPEN DAILY</h2>
+                                <p>8:30 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-caption">
+                            <i class="ion-pricetags"></i>
+                            <div>
+                                <h2>TICKETING SERVICE</h2>
+                                <p>9.00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-caption">
+                            <i class="ion-pricetag"></i>
+                            <div>
+                                <h2>ENTRANCE FEE</h2>
+                                <p>
+                                    ADULT IDR 80,000
+                                    <br/>
+                                    CHILD IDR 60,000
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="container">
+                <hr class="featurette-divider">
+            </div>
+          
+            <div class="container main-content">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2>Research and Conservation</h2>
+                        <p class="lead">
+                            The Sacred Monkey Forest Sanctuary (Monkey Forest Ubud) is not just a tourist attractions or important component in the spiritual and economic life of the local community, but also an important spot for research and conservation programs.
+                            <br/><br/>
+                            The special management and arrangement that have been done in this area encouraged researchers from various research institutions around the world to conduct a research, particularly on the monkey’s social interaction and behavior with their surrounding environment.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./assets/images/main-content-01.jpg"/>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="container">
+                <hr class="featurette-divider">
+            </div>
+          
+            <div class="container main-content">
+                <div class="row">
+                    <div class="col-md-7 order-md-2">
+                        <h2>The Monkey</h2>
+                        <p class="lead">
+                            Because of the considerable population, the conflicts between groups of monkey cannot be avoided. Sometimes for a specific reason, such as a bath to the river in the dry season, certain groups must cross the other groups territory.
+                            <br/><br/>
+                            This type of primate is active during the day and rest at night. The pregnancies of female monkey are about 6 months and generally 1 infant is born. Very rarely are twin. Monkey’s baby stays with their mother for about 10 months and thereafter will be weaned to live independently.
+                        </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="./assets/images/main-content-02.jpg"/>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="container">
+                <hr class="featurette-divider">
+            </div>
+          
+            <div class="container main-content">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2>The Temple</h2>
+                        <p class="lead">
+                            Because of the considerable population, the conflicts between groups of monkey cannot be avoided. Sometimes for a specific reason, such as a bath to the river in the dry season, certain groups must cross the other groups territory.
+                            <br/><br/>
+                            This type of primate is active during the day and rest at night. The pregnancies of female monkey are about 6 months and generally 1 infant is born. Very rarely are twin. Monkey’s baby stays with their mother for about 10 months and thereafter will be weaned to live independently.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./assets/images/main-content-03.jpg"/>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="container">
+                <hr class="featurette-divider">
+            </div>
+          
+            <footer class="container">
+              <p class="text-center">&copy; 2021 Monkey Forest Ubud</p>
+            </footer>
+          </main>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="./assets/lib/bootstrap-4.6.1/js/bootstrap.bundle.js"></script>
     </body>
 </html>
