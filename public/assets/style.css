@@ -53,7 +53,16 @@ main #myCarousel {
     /* margin-bottom: 5rem; */
 }
 main #myCarousel .carousel-inner{
-    background: #b3eba5;
+    background: url('./images/background-main.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main #myCarousel .carousel-inner::after{
+    background: rgba(0,0,0, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 main #myCarousel .carousel-inner .carousel-item{
     min-height: 32rem;
@@ -62,9 +71,29 @@ main #myCarousel .carousel-inner .carousel-item .carousel-caption{
     top: 50%;
     bottom: auto;
     transform: translateY(-50%);
-    color: #000;
     max-width: 700px;
     margin: auto;
+    padding: 20px 12px;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    color: #fff;
+    border-radius: 12px;
+}
+main #myCarousel .carousel-inner .carousel-item.active .carousel-caption h1, main #myCarousel .carousel-inner .carousel-item.active .carousel-caption p{
+    transform: translateY(0);
+    opacity: 1;
+}
+main #myCarousel .carousel-inner .carousel-item .carousel-caption h1{
+    opacity: 0;
+    transition: 0.4s all ease-out;
+    transform: translateY(-100px);
+    transition-delay: 0.2s;
+}
+main #myCarousel .carousel-inner .carousel-item .carousel-caption p{
+    opacity: 0;
+    transition: 0.4s all ease-out;
+    transform: translateY(-100px);
+    transition-delay: 0.8s;
 }
 main .info-wrapper{
     margin-top: 5rem;
@@ -72,6 +101,14 @@ main .info-wrapper{
 main .info-wrapper .info-caption {
     display: flex;
     align-items: flex-start;
+    opacity: 0;
+    transition: 0.4s all ease-out;
+    transform: translateY(-100px);
+    transition-delay: 0.8s;
+}
+main .info-wrapper .info-caption.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 main .info-wrapper .info-caption i{
     font-size: 40px;
